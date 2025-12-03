@@ -6,6 +6,8 @@ title: 'DUET: Distilled LLM Unlearning from an Efficiently Contextualized Teache
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Yisheng Zhong
+  - Zhengbang Yang
+  - Zhuangdi Zhu
 
 # # Author notes (optional)
 # author_notes:
