@@ -50,7 +50,7 @@ featured: true
 # Custom links (uncomment lines below)
 links:
 - name: ACL Anthology
-  url: https://aclanthology.org/2025.emnlp-main.870.pdf
+  url: https://aclanthology.org/2025.emnlp-main.870/
 - name: arXiv
   url: https://arxiv.org/abs/2505.12655
 
