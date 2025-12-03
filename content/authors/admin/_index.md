@@ -40,7 +40,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/EasonZhong99
   - icon: brands/linkedin
-    url: https://www.linkedin.com/yisheng-zhong
+    url: https://www.linkedin.com/in/yisheng-zhong
   # - icon: academicons/google-scholar
   #   url: https://scholar.google.com/
   # - icon: academicons/orcid
