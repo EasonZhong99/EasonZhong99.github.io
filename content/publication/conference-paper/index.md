@@ -14,7 +14,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2024-05-09T00:00:00Z'
-doi: '10.1109/CSCWD61410.2024.10580526'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2024-07-10T00:00:00Z'
@@ -43,9 +43,9 @@ tags:
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: 🔗IEEE
+  url: https://doi.org/10.1109/CSCWD61410.2024.10580526
 
 url_pdf: ''
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
