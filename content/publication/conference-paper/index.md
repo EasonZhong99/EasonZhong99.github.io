@@ -44,7 +44,7 @@ featured: true
 
 # Custom links (uncomment lines below)
 links:
-- name: 🔗IEEE
+- name: IEEE
   url: https://doi.org/10.1109/CSCWD61410.2024.10580526
 
 url_pdf: ''
