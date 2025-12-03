@@ -1,7 +1,7 @@
 ---
 title: Paper Accepted to EMNLP 2025 Main Conference
 summary: Our paper on web intellectual property protection has been accepted to EMNLP 2025 Main Conference!
-date: 2025-09
+date: 2025-09-01
 
 authors:
   - admin
