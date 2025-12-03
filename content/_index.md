@@ -30,18 +30,6 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        During my PhD, I focus on the security of large language models, specifically researching efficient methods for unlearning. This not only makes the models more practical for real-world use but also addresses privacy, copyright, and ethical concerns.
-
-        During my master’s period, I explored the intersection of machine learning and information security, drawing on my undergraduate research background in this area. I worked on employing robust learning methods to defend against poisoning attacks in federated learning while utilizing cryptographic techniques to protect privacy.
-        
-        Please reach out to collaborate 😃
-    design:
-      columns: '1'
   # - block: collection
   #   id: papers
   #   content:

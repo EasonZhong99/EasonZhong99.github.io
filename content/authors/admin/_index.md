@@ -58,7 +58,7 @@ education:
     date_start: 2024-09-01
     # date_end: Now
     summary: |
-      My research focuses on developing advanced techniques for _LLM unlearning_. Supervised by Prof Zhuangdi Zhu (https://zhuangdizhu.github.io/).
+      My research focuses on developing advanced techniques for _LLM unlearning_. Supervised by [Prof. Zhuangdi Zhu](https://zhuangdizhu.github.io/).
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
@@ -174,7 +174,7 @@ awards:
 
 ## About Me
 
-I am a PhD student in Cybersecurity at George Mason University, with a Master’s degree from the University of Chinese Academy of Sciences. My research focuses on the security and privacy of large language models (LLMs), with a particular interest in LLM unlearning techniques. I am a member of the SPARK Lab, led by Prof. Zhuangdi Zhu, where we explore cutting-edge solutions to enhance privacy and security in AI-driven technologies.
+PhD student in Cybersecurity at George Mason University (advised by [Dr. Zhuangdi Zhu](https://zhuangdizhu.github.io/)). Research focuses on the security and privacy of large language models (LLMs), including unlearning, alignment, and defenses against LLM-driven content extraction and misuse. Master's at the University of Chinese Academy of Sciences with work on privacy-preserving federated learning at the State Key Laboratory of Information Security.
 
 <!-- 
 Previously shared information is outdated. I am currently a professor at Harvard University, teaching astrophysics.
