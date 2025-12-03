@@ -1,17 +1,11 @@
 ---
-title: 'Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models'
+title: 'DUET: Distilled LLM Unlearning from an Efficiently Contextualized Teacher'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Yisheng Zhong
-  - Yizhu Wen
-  - Junfeng Guo
-  - Mehran Kafai
-  - Heng Huang
-  - Hanqing Guo
-  - Zhuangdi Zhu
 
 # # Author notes (optional)
 # author_notes:
@@ -22,7 +16,7 @@ date: '2025-01-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-01-01T00:00:00Z'
+publishDate: '2025-12-03T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -30,31 +24,29 @@ publishDate: '2025-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)*
-publication_short: In *EMNLP 2025 Main Conference*
+publication: Under review at *ICLR 2026* (Score: 8666)
+publication_short: Under review at *ICLR 2026*
 
-abstract: 'The protection of cyber Intellectual Property (IP) such as web content is an increasingly critical concern. The rise of large language models (LLMs) with online retrieval capabilities enables convenient access to information but often undermines the rights of original content creators. As users increasingly rely on LLM-generated responses, they gradually diminish direct engagement with original information sources, which will significantly reduce the incentives for IP creators to contribute, and lead to a saturating cyberspace with more AI-generated content. In response, we propose a novel defense framework that empowers web content creators to safeguard their web-based IP from unauthorized LLM real-time extraction and redistribution by leveraging the semantic understanding capability of LLMs themselves. Our method follows principled motivations and effectively addresses an intractable black-box optimization problem. Real-world experiments demonstrated that our methods improve defense success rates from 2.5% to 88.6% on different LLMs, outperforming traditional defenses such as configuration-based restrictions.'
+abstract: 'LLM unlearning is a technique to remove the impacts of undesirable knowledge from the model without retraining from scratch, which is indispensable towards trustworthy AI. Existing unlearning methods face significant limitations: conventional tuning-based unlearning is computationally heavy and prone to catastrophic forgetting. In contrast, in-contextualized unlearning is lightweight for precise unlearning but vulnerable to prompt removal or reverse engineering attacks. In response, we propose Distilled Unlearning from an Efficient Teacher (DUET), a novel distillation-based unlearning method that combines the merits of these two lines of work. It learns a student model to imitate the behavior of a prompt-steered teacher that effectively refuses undesirable knowledge generation while preserving general domain knowledge. Extensive evaluations on existing benchmarks with our enriched evaluation protocols demonstrated that DUET achieves significantly higher performance in both forgetting and utility preservation, while being orders of magnitude more data-efficient than state-of-the-art unlearning methods.'
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
   - Large Language Models
-  - Intellectual Property
-  - Web Security
-  - Real-Time Retrieval
+  - Machine Unlearning
+  - Knowledge Distillation
+  - Trustworthy AI
 
 # Display this page in the Featured widget?
 featured: true
 
 # Custom links (uncomment lines below)
 links:
-- name: ACL Anthology
-  url: https://aclanthology.org/2025.emnlp-main.870/
-- name: arXiv
-  url: https://arxiv.org/abs/2505.12655
+- name: OpenReview
+  url: https://openreview.net/pdf?id=Xa6QRrXrKX
 
-url_pdf: 'web-intellectual-property-risk.pdf'
+url_pdf: 'duet-distilled-llm-unlearning.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
