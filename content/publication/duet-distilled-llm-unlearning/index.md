@@ -26,8 +26,8 @@ publishDate: '2025-12-03T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: 'Under review at *ICLR 2026* (Score: 8666)'
-publication_short: 'Under review at *ICLR 2026* (Score 8666)'
+publication: 'Under review at *ICLR 2026*'
+publication_short: 'Under review at *ICLR 2026*'
 
 abstract: 'LLM unlearning is a technique to remove the impacts of undesirable knowledge from the model without retraining from scratch, which is indispensable towards trustworthy AI. Existing unlearning methods face significant limitations: conventional tuning-based unlearning is computationally heavy and prone to catastrophic forgetting. In contrast, in-contextualized unlearning is lightweight for precise unlearning but vulnerable to prompt removal or reverse engineering attacks. In response, we propose Distilled Unlearning from an Efficient Teacher (DUET), a novel distillation-based unlearning method that combines the merits of these two lines of work. It learns a student model to imitate the behavior of a prompt-steered teacher that effectively refuses undesirable knowledge generation while preserving general domain knowledge. Extensive evaluations on existing benchmarks with our enriched evaluation protocols demonstrated that DUET achieves significantly higher performance in both forgetting and utility preservation, while being orders of magnitude more data-efficient than state-of-the-art unlearning methods.'
 
@@ -44,11 +44,11 @@ tags:
 featured: true
 
 # Custom links (uncomment lines below)
-links:
-- name: OpenReview
-  url: https://openreview.net/forum?id=Xa6QRrXrKX
+# links:
+# - name: Custom Link
+#   url: http://example.org
 
-url_pdf: 'duet-distilled-llm-unlearning.pdf'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
