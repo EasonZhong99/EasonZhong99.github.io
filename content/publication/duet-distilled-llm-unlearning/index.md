@@ -18,7 +18,7 @@ date: '2025-01-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-12-03T00:00:00Z'
+publishDate: '2026-01-29T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -26,8 +26,8 @@ publishDate: '2025-12-03T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: "Under review at *ICLR 2026*"
-publication_short: "Under review at *ICLR 2026*"
+publication: "*ICLR 2026* Accepted"
+publication_short: "*ICLR 2026* Accepted"
 
 abstract: 'LLM unlearning is a technique to remove the impacts of undesirable knowledge from the model without retraining from scratch, which is indispensable towards trustworthy AI. Existing unlearning methods face significant limitations: conventional tuning-based unlearning is computationally heavy and prone to catastrophic forgetting. In contrast, in-contextualized unlearning is lightweight for precise unlearning but vulnerable to prompt removal or reverse engineering attacks. In response, we propose Distilled Unlearning from an Efficient Teacher (DUET), a novel distillation-based unlearning method that combines the merits of these two lines of work. It learns a student model to imitate the behavior of a prompt-steered teacher that effectively refuses undesirable knowledge generation while preserving general domain knowledge. Extensive evaluations on existing benchmarks with our enriched evaluation protocols demonstrated that DUET achieves significantly higher performance in both forgetting and utility preservation, while being orders of magnitude more data-efficient than state-of-the-art unlearning methods.'
 
@@ -44,15 +44,17 @@ tags:
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+  - name: arXiv
+    url: https://arxiv.org/abs/2601.21283
+  - name: OpenReview
+    url: https://openreview.net/forum?id=Xa6QRrXrKX
 
-url_pdf: ''
+url_pdf: https://openreview.net/pdf?id=Xa6QRrXrKX
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: /project/llm-unlearning-duet/
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -69,7 +71,8 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects:
+  - llm-unlearning-duet
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
