@@ -54,7 +54,7 @@ url_pdf: https://openreview.net/pdf?id=Xa6QRrXrKX
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: /project/llm-unlearning-duet/
+url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -71,8 +71,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - llm-unlearning-duet
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
