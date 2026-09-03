@@ -178,16 +178,12 @@ awards:
 
 ## About Me
 
-I am a third-year PhD student in Cybersecurity at **George Mason University**, advised by [Dr. Zhuangdi Zhu](https://zhuangdizhu.github.io/) and expected to graduate in 2028. My research focuses on **LLM post-training, safety alignment, machine unlearning, and agentic AI**.
+I am a third-year PhD student in Cybersecurity at **George Mason University**, advised by [Dr. Zhuangdi Zhu](https://zhuangdizhu.github.io/) and expecting to graduate in 2028. My research focuses on **LLM post-training, safety alignment, machine unlearning, and agentic AI**.
 
-The thread running through my work is control over what a model has learned: once undesirable knowledge is in the weights, what does it actually take to remove it — and to keep it removed? [DUET](/publication/duet-distilled-llm-unlearning/) (ICLR 2026) introduces on-policy distillation for unlearning, where a prompt-conditioned teacher elicits the forgetting behavior we want and distills it into the student through Top-K logit alignment.
+One question runs through my work: once undesirable knowledge is in a model's weights, what does it take to remove it — and to keep it removed? [DUET](/publication/duet-distilled-llm-unlearning/) (ICLR 2026) introduces on-policy distillation for unlearning, and [CALIBURN](/publication/caliburn-self-calibrated-unlearning/) (EMNLP 2026) reformulates it as policy-level preference optimization calibrated by the model's own confidence. I also study the mirror image of the problem: [keeping web content out of an LLM's reach](/publication/web-intellectual-property-risk/) in the first place (EMNLP 2025).
 
-[CALIBURN](/publication/caliburn-self-calibrated-unlearning/) (EMNLP 2026) comes at it from the other direction: it reformulates unlearning as policy-level preference optimization with a self-calibrated margin drawn from the model's own confidence, which removes the dependence on a static reference model or on retention data.
+Before Mason I completed my Master's at the **University of Chinese Academy of Sciences**, working on privacy-preserving federated learning at the State Key Laboratory of Information Security.
 
-I also work on the mirror image of this problem — [preventing unauthorized real-time retrieval](/publication/web-intellectual-property-risk/) of web content by LLMs (EMNLP 2025), where the goal is keeping knowledge *out* of a model's reach rather than removing it after the fact.
+In the summer of 2026 I interned on the **AI team at The Washington Post**, building LLM-based representations for personalized news recommendation.
 
-Before Mason I completed my Master's at the **University of Chinese Academy of Sciences**, working on privacy-preserving federated learning at the State Key Laboratory of Information Security. In the summer of 2026 I interned on the **AI team at The Washington Post**, building LLM-based representations for personalized news recommendation.
-
-I serve as a reviewer for ICLR (2025, 2026) and IEEE Transactions on Information Forensics and Security. Outside of research you will usually find me on a tennis court, in the gym, or somewhere with a camera.
-
-Feel free to reach out at **yzhong7@gmu.edu** — I am always happy to talk about unlearning, LLM safety, or possible collaborations.
+I review for ICLR and IEEE Transactions on Information Forensics and Security. Reach me at **yzhong7@gmu.edu** — always happy to talk about unlearning, LLM safety, or collaborations.
