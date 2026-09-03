@@ -1,0 +1,12 @@
+# Hugo build output & caches
+/public/
+/resources/
+.hugo_build.lock
+hugo_stats.json
+
+# Go module checksums (modules are resolved at build time)
+/go.sum
+
+# OS / editor
+.DS_Store
+Thumbs.db

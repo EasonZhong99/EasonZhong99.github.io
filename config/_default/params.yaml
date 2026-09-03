@@ -13,9 +13,9 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: 'George Mason University'
+    description: 'Yisheng (Eason) Zhong — PhD student in Cybersecurity at George Mason University, researching the security, privacy, and trustworthiness of large language models: machine unlearning, alignment, and defenses against LLM-driven content extraction.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -40,7 +40,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Yisheng (Eason) Zhong. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

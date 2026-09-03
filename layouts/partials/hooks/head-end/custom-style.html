@@ -1,0 +1,143 @@
+{{/* Custom style refinements layered on top of the Blox Tailwind theme. */}}
+<style>
+  /* ---------- Typography ---------- */
+  :root { --measure: 68ch; }
+
+  .prose :where(a):not(:where(.not-prose *)) {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: color .15s ease;
+  }
+
+  /* ---------- Section headings ---------- */
+  section > .container > h1,
+  section > .container > h2 {
+    letter-spacing: -0.02em;
+  }
+  section h1.text-center::after,
+  section h2.text-center::after {
+    content: "";
+    display: block;
+    width: 2.75rem;
+    height: 3px;
+    margin: .85rem auto 0;
+    border-radius: 999px;
+    background: currentColor;
+    opacity: .35;
+  }
+
+  /* ---------- Publication list (citation view) ---------- */
+  #papers .pub-list-item {
+    position: relative;
+    padding: 1rem 1.15rem 1rem 1.35rem;
+    margin-bottom: .85rem !important;
+    border-radius: .75rem;
+    border: 1px solid rgb(0 0 0 / .07);
+    background: rgb(255 255 255 / .55);
+    transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+  }
+  #papers .pub-list-item::before {
+    content: "";
+    position: absolute;
+    left: 0; top: .9rem; bottom: .9rem;
+    width: 3px;
+    border-radius: 999px;
+    background: rgb(var(--color-primary-500, 16 185 129) / .55);
+  }
+  #papers .pub-list-item:hover {
+    border-color: rgb(0 0 0 / .14);
+    box-shadow: 0 6px 20px -10px rgb(0 0 0 / .25);
+    transform: translateY(-1px);
+  }
+  #papers .pub-list-item .pub-icon { display: none; }
+  #papers .pub-list-item > a {
+    font-weight: 600;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  #papers .li-cite-author { color: rgb(75 85 99); }
+  #papers .pub-list-item .flex { margin-top: .6rem; }
+
+  .dark #papers .pub-list-item {
+    border-color: rgb(255 255 255 / .09);
+    background: rgb(255 255 255 / .03);
+  }
+  .dark #papers .pub-list-item:hover { border-color: rgb(255 255 255 / .2); }
+  .dark #papers .li-cite-author { color: rgb(161 161 170); }
+
+  /* ---------- News cards ---------- */
+  #news > .container > div > div,
+  #news .container.rounded-xl {
+    transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+  }
+  #news .container.rounded-xl:hover {
+    box-shadow: 0 14px 34px -18px rgb(0 0 0 / .35);
+    transform: translateY(-2px);
+  }
+  /* Even out cards that have no featured image */
+  #news .container.rounded-xl .p-8 { padding: 1.5rem 1.75rem; }
+  #news .container.rounded-xl .uppercase {
+    text-transform: none;
+    letter-spacing: -0.01em;
+    font-size: 1.0625rem;
+    line-height: 1.35;
+    font-weight: 650;
+  }
+  #news .container.rounded-xl img {
+    height: 100%;
+    min-height: 11rem;
+    transition: transform .5s ease;
+  }
+  #news .container.rounded-xl a:hover img { transform: scale(1.06); }
+  #news .container.rounded-xl p { line-height: 1.55; }
+
+  /* ---------- Profile / hero ---------- */
+  .avatar img, img.avatar {
+    box-shadow: 0 0 0 4px rgb(255 255 255 / .18), 0 10px 30px -12px rgb(0 0 0 / .55);
+  }
+
+  /* ---------- Resume experience & education ---------- */
+  .prose ul > li::marker { color: rgb(var(--color-primary-500, 16 185 129) / .9); }
+</style>
+<style>
+  /* Align the skill group columns (Technical Skills / Hobbies) */
+  .blox-resume-skills .grid > div > h3,
+  .blox-resume-skills h3 { margin-top: 0 !important; }
+  .blox-resume-skills .skills-icon svg { opacity: .85; }
+  .blox-resume-skills li, .blox-resume-skills .uppercase { letter-spacing: .02em; }
+</style>
+<style>
+  /* Higher-contrast CTA on the dark hero */
+  .blox-resume-biography-3.dark a[href$=".pdf"],
+  .blox-resume-biography-3 .dark a[href$=".pdf"] {
+    background: rgb(255 255 255 / .95) !important;
+    color: rgb(17 24 39) !important;
+    border-color: transparent !important;
+    font-weight: 600;
+    box-shadow: 0 8px 22px -12px rgb(0 0 0 / .6);
+    transition: transform .15s ease, background .15s ease;
+  }
+  .blox-resume-biography-3.dark a[href$=".pdf"]:hover { transform: translateY(-1px); background: #fff !important; }
+  .blox-resume-biography-3.dark a[href$=".pdf"] svg { color: rgb(17 24 39) !important; }
+
+  /* Social icons on the hero: a touch more presence */
+  .blox-resume-biography-3 a svg { transition: transform .15s ease, opacity .15s ease; }
+  .blox-resume-biography-3 a:hover svg { transform: translateY(-2px); opacity: 1; }
+</style>
+<style>
+  /* Keep tall portrait photos from dominating an article */
+  article .prose figure,
+  article .prose p > img { margin-inline: auto; }
+  article .prose img {
+    max-height: 34rem;
+    width: auto;
+    border-radius: .6rem;
+    box-shadow: 0 10px 30px -18px rgb(0 0 0 / .45);
+  }
+  article .prose figcaption {
+    text-align: center;
+    font-size: .85rem;
+    margin-top: .6rem;
+    opacity: .75;
+  }
+</style>
