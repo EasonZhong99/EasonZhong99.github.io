@@ -49,10 +49,10 @@ interests:
   - LLM Post-Training
   - Safety Alignment
   - Multi-Objective Alignment
-  - LLM Agents & Coding Agents
+  - LLM Agents
 
 education:
-  - area: PhD Cyber Security
+  - area: PhD Cybersecurity
     institution: George Mason University
     date_start: 2024-09-01
     # date_end: Now
@@ -63,7 +63,7 @@ education:
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
-  - area: MSc Cyber Security
+  - area: MSc Cybersecurity
     institution: University of Chinese Academy of Sciences
     date_start: 2021-09-01
     date_end: 2024-06-01
@@ -101,8 +101,7 @@ work:
     summary: |2-
       Cyber Security Engineering, advised by Dr. Zhuangdi Zhu.
       - Research on LLM post-training and safety alignment, especially conflicts between competing objectives, and on LLM agents.
-      - First-author work at ICLR 2026 and EMNLP 2025 Main Conference; co-authored work at EMNLP 2026 Main Conference; first-author multi-objective alignment work under review at ICLR 2027.
-      - Reviewer for ICLR 2025/2026 and IEEE Transactions on Information Forensics and Security (TIFS).
+      - First-author work at ICLR 2026 and EMNLP 2025 Main Conference; co-authored work at EMNLP 2026 Main Conference; first-author multi-objective alignment work under review.
   - position: Research Assistant
     company_name: State Key Laboratory of Information Security, Chinese Academy of Sciences
     company_url: 'https://www.iie.ac.cn/'
@@ -142,7 +141,7 @@ skills:
         description: ''
         percent: 60
         icon: trophy
-      - name: Workout
+      - name: Bodybuilding (amateur)
         description: ''
         percent: 100
         icon: fire
@@ -178,12 +177,16 @@ awards:
 
 ## About Me
 
-I am a third-year PhD student in Cyber Security at **George Mason University**, advised by [Dr. Zhuangdi Zhu](https://zhuangdizhu.github.io/) and expecting to graduate in 2028. I work on **LLM post-training and safety alignment**, especially conflicts between competing objectives, and on **LLM agents**.
+I am a third-year PhD student in Cybersecurity at **George Mason University**, advised by [Dr. Zhuangdi Zhu](https://zhuangdizhu.github.io/) and expecting to graduate in 2028. I work on **LLM post-training and safety alignment**, especially conflicts between competing objectives, and on **LLM agents**.
 
-My current work asks why alignment goals such as refusing harmful requests and staying helpful end up fighting each other during training. In [Self-Anchored Reference Distributions](/publication/self-anchored-multi-objective-alignment/) (under review at ICLR 2027), I show that the training signal itself is a key source of this conflict, and propose **Caesar**, a post-training method in which the model, prompted per objective, serves as its own teacher. It cuts cross-objective interference by ~70% and jailbreak success from 60.6% to 2.0%, with benign refusals nearly unchanged. I am also working on **coding agents**, looking for supervision signals that are more accurate and better suited to long-horizon tasks.
+My current work asks why alignment goals such as suppressing harmful behavior and complying with legitimate requests end up fighting each other during training. In [Self-Anchored Reference Distributions](/publication/self-anchored-multi-objective-alignment/) (under review), I propose a divide-and-conquer strategy that builds objective-specific supervision from the target model itself: conditioned on goal-specific instructions, the model provides its own teacher distribution for each objective, giving richer supervision while reducing negative transfer across goals. I am also working on **agents**, looking for supervision signals that are more accurate and better suited to long-horizon tasks.
 
 Earlier, [DUET](/publication/duet-distilled-llm-unlearning/) (ICLR 2026) brought on-policy distillation to LLM unlearning, [CALIBURN](/publication/caliburn-self-calibrated-unlearning/) (EMNLP 2026) calibrated preference optimization with the model's own confidence, and [Web IP at Risk](/publication/web-intellectual-property-risk/) (EMNLP 2025) stopped LLM web agents from retrieving content without authorization.
 
 In the summer of 2026 I was a research intern on the **AI team at The Washington Post**, where I built StoryID, an LLM-generated story representation for news recommendation that improved Recall@5 by 7.5 points over the production baseline.
 
-I review for ICLR and IEEE Transactions on Information Forensics and Security. I'm looking for **Summer 2027 research internships**. Reach me at **yzhong7@gmu.edu**, always happy to talk about post-training, alignment, agents, or collaborations.
+I'm looking for **Summer 2027 research internships**. Reach me at **yzhong7@gmu.edu**, always happy to talk about post-training, alignment, agents, or collaborations.
+
+Outside the lab, I'm an amateur bodybuilder 💪
+
+![Amateur bodybuilding](/uploads/bodybuilding.jpg)
