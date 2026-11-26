@@ -48,18 +48,18 @@ profiles:
 interests:
   - LLM Post-Training
   - Safety Alignment
-  - Machine Unlearning
-  - Agentic AI
+  - Multi-Objective Alignment
+  - LLM Agents & Coding Agents
 
 education:
-  - area: PhD Information Technology (Cybersecurity)
+  - area: PhD Cyber Security
     institution: George Mason University
     date_start: 2024-09-01
     # date_end: Now
     summary: |
       GPA: 4.00/4.00 — expected to graduate in 2028.
 
-      Research on LLM post-training, safety alignment, machine unlearning, and agentic AI. Advised by Dr. Zhuangdi Zhu.
+      Research on LLM post-training and safety alignment, especially conflicts between competing objectives, and on LLM agents. Advised by Dr. Zhuangdi Zhu.
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
@@ -82,7 +82,7 @@ education:
       Foundational coursework in computer science and machine learning. Graduated in the top 1% of my cohort and earned direct admission to a Master's program at the Chinese Academy of Sciences.
 
 work:
-  - position: Summer Intern, AI Team
+  - position: Research Intern, AI Team
     company_name: The Washington Post
     company_url: 'https://www.washingtonpost.com/'
     company_logo: ''
@@ -90,8 +90,8 @@ work:
     date_end: 2026-08-31
     summary: |2-
       2026 Engineering & Business Operations Internship Program, Washington, D.C.
-      - Developed an LLM-assisted representation framework for personalized news recommendation, introducing **StoryID** to capture the underlying story, entities, and article intent beyond article-level IDs or coarse topics.
-      - Integrated StoryID representations with existing recommendation models to improve personalization, with evaluation focused on cold-start recommendation, content diversity, and recommendation interpretability.
+      - Built **StoryID**, an LLM-generated representation of each article's underlying story, key entities, and intent for news recommendation, replacing article IDs and topic tags; generated offline, so no LLM inference at serving time.
+      - Improved Recall@5 by 7.5 points over the production baseline (1.3K users × 150 candidates); targeted cold-start ranking, near-duplicate suppression, and human-readable recommendation explanations.
   - position: Graduate Research Assistant
     company_name: George Mason University
     company_url: 'https://www.gmu.edu/'
@@ -100,8 +100,8 @@ work:
     date_end: ''
     summary: |2-
       Cyber Security Engineering, advised by Dr. Zhuangdi Zhu.
-      - Research on LLM post-training, safety alignment, machine unlearning, and agentic AI.
-      - First-author work published at ICLR 2026 and EMNLP 2025 Main Conference; co-authored work at EMNLP 2026 Main Conference.
+      - Research on LLM post-training and safety alignment, especially conflicts between competing objectives, and on LLM agents.
+      - First-author work at ICLR 2026 and EMNLP 2025 Main Conference; co-authored work at EMNLP 2026 Main Conference; first-author multi-objective alignment work under review at ICLR 2027.
       - Reviewer for ICLR 2025/2026 and IEEE Transactions on Information Forensics and Security (TIFS).
   - position: Research Assistant
     company_name: State Key Laboratory of Information Security, Chinese Academy of Sciences
@@ -178,12 +178,12 @@ awards:
 
 ## About Me
 
-I am a third-year PhD student in Cybersecurity at **George Mason University**, advised by [Dr. Zhuangdi Zhu](https://zhuangdizhu.github.io/) and expecting to graduate in 2028. My research focuses on **LLM post-training, safety alignment, machine unlearning, and agentic AI**.
+I am a third-year PhD student in Cyber Security at **George Mason University**, advised by [Dr. Zhuangdi Zhu](https://zhuangdizhu.github.io/) and expecting to graduate in 2028. I work on **LLM post-training and safety alignment**, especially conflicts between competing objectives, and on **LLM agents**.
 
-One question runs through my work: once undesirable knowledge is in a model's weights, what does it take to remove it — and to keep it removed? [DUET](/publication/duet-distilled-llm-unlearning/) (ICLR 2026) introduces on-policy distillation for unlearning, and [CALIBURN](/publication/caliburn-self-calibrated-unlearning/) (EMNLP 2026) reformulates it as policy-level preference optimization calibrated by the model's own confidence. I also study the mirror image of the problem: [keeping web content out of an LLM's reach](/publication/web-intellectual-property-risk/) in the first place (EMNLP 2025).
+My current work asks why alignment goals such as refusing harmful requests and staying helpful end up fighting each other during training. In [Self-Anchored Reference Distributions](/publication/self-anchored-multi-objective-alignment/) (under review at ICLR 2027), I show that the training signal itself is a key source of this conflict, and propose **Caesar**, a post-training method in which the model, prompted per objective, serves as its own teacher. It cuts cross-objective interference by ~70% and jailbreak success from 60.6% to 2.0%, with benign refusals nearly unchanged. I am also working on **coding agents**, looking for supervision signals that are more accurate and better suited to long-horizon tasks.
 
-Before Mason I completed my Master's at the **University of Chinese Academy of Sciences**, working on privacy-preserving federated learning at the State Key Laboratory of Information Security.
+Earlier, [DUET](/publication/duet-distilled-llm-unlearning/) (ICLR 2026) brought on-policy distillation to LLM unlearning, [CALIBURN](/publication/caliburn-self-calibrated-unlearning/) (EMNLP 2026) calibrated preference optimization with the model's own confidence, and [Web IP at Risk](/publication/web-intellectual-property-risk/) (EMNLP 2025) stopped LLM web agents from retrieving content without authorization.
 
-In the summer of 2026 I interned on the **AI team at The Washington Post**, building LLM-based representations for personalized news recommendation.
+In the summer of 2026 I was a research intern on the **AI team at The Washington Post**, where I built StoryID, an LLM-generated story representation for news recommendation that improved Recall@5 by 7.5 points over the production baseline.
 
-I review for ICLR and IEEE Transactions on Information Forensics and Security. Reach me at **yzhong7@gmu.edu** — always happy to talk about unlearning, LLM safety, or collaborations.
+I review for ICLR and IEEE Transactions on Information Forensics and Security. I'm looking for **Summer 2027 research internships**. Reach me at **yzhong7@gmu.edu**, always happy to talk about post-training, alignment, agents, or collaborations.
