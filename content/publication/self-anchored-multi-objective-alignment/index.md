@@ -11,13 +11,13 @@ publishDate: '2026-11-26T00:00:00Z'
 
 publication_types: ['article']
 
-publication: Under review at *ICLR 2027*
-publication_short: Under review at *ICLR 2027*
+publication: Under review
+publication_short: Under review
 
 abstract: |
-  Aligning a model with several goals at once, such as refusing harmful requests while staying helpful, often leads to conflicts where improving one objective hurts another. We identify the training signal itself, not just the optimizer, as a key source of this conflict: hard fine-tuning labels penalize equally valid responses. We propose Caesar, a post-training method in which the model, prompted per objective, serves as its own teacher, giving soft and mutually compatible targets with no extra teacher model or loss-weight tuning. Caesar cuts cross-objective interference by about 70% compared with standard fine-tuning and reduces jailbreak success from 60.6% to 2.0% with benign refusals nearly unchanged, and it remains effective with as few as 160 training examples.
+  Foundation model (FM) alignment is inherently a multi-objective optimization problem that requires balancing competing goals, such as suppressing undesirable behaviors while complying with legitimate requests. Existing solutions typically optimize weighted combinations of objective-specific losses or reconcile conflicting gradients, but often require extensive hyperparameter tuning and may favor certain sub-objectives. We identify a central need for effective multi-objective alignment: characterizing an ideal posterior distribution of each alignment objective that provides richer supervision while reducing negative transfer. Motivated by FMs' few-shot learning ability to produce steerable predictive distributions, we propose a divide and conquer strategy that constructs objective-specific supervision from the target model itself. Specifically, the model is conditioned on goal-specific instructions, which generates self-supervised teacher distribution that better characterizes the target distribution yet mitigates the distributional divergence across alignment goals. We evaluate our method in two settings where goal conflicts are especially pronounced: unlearning and safety alignment. Comprehensive evaluations show that our method achieves the strongest overall balance among competing objectives without sacrificing performance on individual learning objectives.
 
-summary: Caesar uses the model itself, prompted per objective, as a self-anchored teacher for multi-objective alignment, cutting cross-objective interference by ~70% and jailbreak success from 60.6% to 2.0%.
+summary: A divide-and-conquer approach to multi-objective alignment that builds objective-specific teacher distributions from the target model itself, conditioned on goal-specific instructions, achieving the strongest overall balance among competing objectives in unlearning and safety alignment.
 
 tags:
   - Large Language Models
