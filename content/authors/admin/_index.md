@@ -188,5 +188,3 @@ In the summer of 2026 I was a research intern on the **AI team at The Washington
 I'm looking for **Summer 2027 research internships**. Reach me at **yzhong7@gmu.edu**, always happy to talk about post-training, alignment, agents, or collaborations.
 
 Outside the lab, I'm an amateur bodybuilder 💪
-
-![Amateur bodybuilding](/uploads/bodybuilding.jpg)
